@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Buzzly — Home (Static Demo)</title>
+  <link rel="stylesheet" href="home.css">
+
+</head>
+<body>
+  <header class="top" role="banner">
+    <div class="brand">
+      <div class="logo">B</div>
+      <div class="site-info">
+        <div class="title">Buzzly</div>
+        <div class="subtitle">A static social feed — college project</div>
+      </div>
+    </div>
+
+    <nav class="nav-actions" role="navigation" aria-label="top navigation">
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#trends">Trends</a>
+      <a class="nav-link" href="#resources">Resources</a>
+      <button class="login.">Log in</button>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside class="left" aria-label="primary navigation">
+      <div class="profile">
+        <div class="avatar">Y</div>
+        <div class="profile-info">
+          <strong>Tejash Batham</strong>
+          <div class="muted">1st year — CSE</div>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <a href="#home">🏠 Home</a>
+        <a href="#explore">🔎 Explore</a>
+        <a href="#notifications">🔔 Notifications</a>
+        <a href="#messages">✉️ Messages</a>
+        <a href="#bookmarks">🔖 Bookmarks</a>
+      </nav>
+
+      <div class="note">
+        <h4>Project note</h4>
+        <p class="muted">This is a static HTML template for a college project. All news items marked <strong>[Fictional]</strong> are made-up examples and should not be treated as real.</p>
+      </div>
+    </aside>
+
+    <main class="main" id="home" role="main">
+      <section class="hero">
+        <h1>Buzzly — Campus Feed (Static)</h1>
+        <p class="muted">No JavaScript — pure HTML & CSS. Edit this file to add or remove posts before submission.</p>
+      </section>
+
+      <section class="compose">
+        <h2>Compose (preview)</h2>
+        <textarea readonly placeholder="Static preview area — interactive posting disabled for the project."></textarea>
+        <p class="muted small">To enable posting, add a backend or client-side script (not included here).</p>
+      </section>
+
+      <section class="feed" aria-label="feed">
+        <h2>Feed — sample posts</h2>
+
+        <!-- many posts to increase page length -->
+        <!-- repeat pattern with varying content; clearly mark fictional news -->
+
+        <!-- Post: real-styled student update -->
+        <article class="post">
+          <div class="post-left"><div class="avatar">R</div></div>
+          <div class="post-body">
+            <header class="post-head"><strong>Rhea Kapoor</strong> <span class="dot">·</span> <span class="muted">Oct 10, 2025</span></header>
+            <p class="post-text">Built a mini UI component library for our class project — open to collaborators. Check my repo!</p>
+            <div class="meta">#dev • 120 likes • 21 comments</div>
+          </div>
+        </article>
+        <br>
+
+        <!-- Fictional headline clearly labelled -->
+        <article class="post bordered">
+          <div class="post-left"><div class="avatar">N</div></div>
+          <div class="post-body">
+            <header class="post-head"><strong>NewsBot (sample)</strong> <span class="dot">·</span> <span class="muted">Sep 29, 2025</span></header>
+            <p class="post-text"><strong>[Fictional]</strong> Campus council announces midnight food festival with illuminated trees. <em>This is a fictional sample used only for the project.</em></p>
+            <div class="meta">#campus (fictional)</div>
+          </div>
+        </article>
+        <br>
+
+        <!-- More posts -->
+        <article class="post">
+          <div class="post-left"><div class="avatar">D</div></div>
+          <div class="post-body">
+            <header class="post-head"><strong>Dev Notes</strong> <span class="dot">·</span> <span class="muted">Aug 14, 2025</span></header>
+            <p class="post-text">Pro tip: write small components and test them independently. CSS variables make themable UIs easy.</p>
+            <div class="meta">#tips</div>
+          </div>
+        </article>
+        <br>
+
+        <!-- Long fictional article to increase size -->
+        <article class="post">
+          <div class="post-left"><div class="avatar">C</div></div>
+          <div class="post-body">
+            <header class="post-head"><strong>Campus Chronicle (sample)</strong> <span class="dot">·</span> <span class="muted">Jul 01, 2025</span></header>
+            <p class="post-text"><strong>[Fictional]</strong> The cultural committee has arranged an all-night carnival featuring student bands, art stalls, food trucks, and hack demos. This announcement is part of a mock dataset for your college project and must not be published as factual news.</p>
+            <div class="meta">#campus • <span class="muted">fictional</span></div>
+          </div>
+        </article>
+        <br>
+
+        <!-- Repeat many more posts (static) -->
+        
+        <!-- We'll include a large number of posts to intentionally lengthen the page for project requirements -->
+        <!-- Post template repeated with different names/dates/categories -->
+
+        <!-- Post 5 -->
+        <article class="post">
+          <div class="post-left"><div class="avatar">S</div></div>
+          <div class="post-body">
+            <header class="post-head"><strong>Samir</strong> <span class="dot">·</span> <span class="muted">Jun 20, 2025</span></header>
+            <p class="post-text">Shared notes from 'Algorithms I' — happy to collaborate on study groups.</p>
+            <div class="meta">#study • 34 likes</div>
+          </div>
+        </article>
+        <br>
+
+        <!-- Post 6 -->
+        <article class="post bordered">
+          <div class="post-left"><div class="avatar">L</div></div>
+          <div class="post-body">
+            <header class="post-head"><strong>Lisa</strong> <span class="dot">·</span> <span class="muted">May 11, 2025</span></header>
+            <p class="post-text">Design challenge: craft a micro-interaction for the mobile compose button — submit entries by Friday.</p>
+            <div class="meta">#design • deadline May 15</div>
+          </div>
+        </article>
+        <br>
+
+        <!-- Post 7 -->
+        <article class="post">
+          <div class="post-left"><div class="avatar">M</div></div>
+          <div class="post-body">
+            <header class="post-head"><strong>Memo</strong> <span class="dot">·</span> <span class="muted">Apr 02, 2025</span></header>
+            <p class="post-text">Tips for first-year students: manage time, join a club, and build one small project monthly to improve skills.</p>
+            <div class="meta">#college</div>
+          </div>
+        </article>
+        <br>
+
+        <!-- Add many more repeated posts to increase length -->
+        <!-- We'll create 20 more short posts below -->
+        
+        <!-- Generated filler posts start -->
+
+        <article class="post"><div class="post-left"><div class="avatar">X</div></div><div class="post-body"><header class="post-head"><strong>Himanshu</strong> <span class="dot">·</span> <span class="muted">Mar 12, 2025</span></header><p class="post-text">Hackathon highlight: built an accessibility tool that reads campus signboards aloud.</p><div class="meta">#hackathon</div></div></article>
+        <br>
+
+        <article class="post"><div class="post-left"><div class="avatar">P</div></div><div class="post-body"><header class="post-head"><strong>ProjectGroup</strong> <span class="dot">·</span> <span class="muted">Feb 02, 2025</span></header><p class="post-text">Final project update: UI complete, integration pending. Demo scheduled next week.</p><div class="meta">#project</div></div></article>
+        <br>
+
+        <article class="post bordered"><div class="post-left"><div class="avatar">T</div></div><div class="post-body"><header class="post-head"><strong>TeachAssist</strong> <span class="dot">·</span> <span class="muted">Jan 10, 2025</span></header><p class="post-text">Lecture slides for 'Data Structures' uploaded. Review before the next class.</p><div class="meta">#classes</div></div></article>
+        <br>
+
+        <article class="post"><div class="post-left"><div class="avatar">A</div></div><div class="post-body"><header class="post-head"><strong>Anita</strong> <span class="dot">·</span> <span class="muted">Dec 20, 2024</span></header><p class="post-text">Started a coding circle for beginners — first meetup this Sunday.</p><div class="meta">#community</div></div></article>
+        <br>
+
+        <article class="post"><div class="post-left"><div class="avatar">V</div></div><div class="post-body"><header class="post-head"><strong>Varun</strong> <span class="dot">·</span> <span class="muted">Nov 05, 2024</span></header><p class="post-text">Tips for preparing for midterms: practice old questions and form study groups.</p><div class="meta">#examtips</div></div></article>
+        <br>
+
+        <article class="post bordered"><div class="post-left"><div class="avatar">G</div></div><div class="post-body"><header class="post-head"><strong>Gitanjali</strong> <span class="dot">·</span> <span class="muted">Oct 01, 2024</span></header><p class="post-text">Design sprint recap: our team prototyped an inclusive campus map.</p><div class="meta">#ux</div></div></article>
+        <br>
+
+        <article class="post"><div class="post-left"><div class="avatar">Rk</div></div><div class="post-body"><header class="post-head"><strong>Rakesh</strong> <span class="dot">·</span> <span class="muted">Sep 22, 2024</span></header><p class="post-text">Sharing quick notes on recursion and tree traversal.</p><div class="meta">#algorithms</div></div></article>
+        <br>
+
+        <article class="post"><div class="post-left"><div class="avatar">S2</div></div><div class="post-body"><header class="post-head"><strong>Sneha</strong> <span class="dot">·</span> <span class="muted">Aug 17, 2024</span></header><p class="post-text">Organizing a study swap: exchange lecture notes for last semester.</p><div class="meta">#study</div></div></article>
+        <br>
+
+        <article class="post bordered"><div class="post-left"><div class="avatar">O</div></div><div class="post-body"><header class="post-head"><strong>Omar</strong> <span class="dot">·</span> <span class="muted">Jul 14, 2024</span></header><p class="post-text">Project idea: build a campus guide app with offline maps.</p><div class="meta">#mobile</div></div></article>
+        <br>
+
+        <article class="post"><div class="post-left"><div class="avatar">Z</div></div><div class="post-body"><header class="post-head"><strong>Zoya</strong> <span class="dot">·</span> <span class="muted">Jun 03, 2024</span></header><p class="post-text">Photography club meetup this weekend — bring your cameras!</p><div class="meta">#photography</div></div></article>
+        <br>
+
+        <article class="post"><div class="post-left"><div class="avatar">K</div></div><div class="post-body"><header class="post-head"><strong>Karan</strong> <span class="dot">·</span> <span class="muted">May 21, 2024</span></header><p class="post-text">Published my first blog post about learning web accessibility.</p><div class="meta">#blog</div></div></article>
+        <br>
+
+        <article class="post bordered"><div class="post-left"><div class="avatar">B2</div></div><div class="post-body"><header class="post-head"><strong>Batchmates</strong> <span class="dot">·</span> <span class="muted">Apr 06, 2024</span></header><p class="post-text">Reminder: project submission deadline extended by two days.</p><div class="meta">#announcement</div></div></article>
+        <br>
+
+        <article class="post"><div class="post-left"><div class="avatar">E</div></div><div class="post-body"><header class="post-head"><strong>Esha</strong> <span class="dot">·</span> <span class="muted">Mar 01, 2024</span></header><p class="post-text">Looking for partners for a machine learning mini-project.</p><div class="meta">#ml</div></div></article>
+        <br>
+
+        <article class="post"><div class="post-left"><div class="avatar">F</div></div><div class="post-body"><header class="post-head"><strong>Faculty</strong> <span class="dot">·</span> <span class="muted">Feb 15, 2024</span></header><p class="post-text">Office hours updated: see the schedule page for details.</p><div class="meta">#faculty</div></div></article>
+        <br>
+
+        <article class="post bordered"><div class="post-left"><div class="avatar">M2</div></div><div class="post-body"><header class="post-head"><strong>Mentor</strong> <span class="dot">·</span> <span class="muted">Jan 03, 2024</span></header><p class="post-text">Career tips: start contributing to open-source early — internships look for applied skills.</p><div class="meta">#career</div></div></article>
+        <br>
+
+        <article class="post"><div class="post-left"><div class="avatar">Q</div></div><div class="post-body"><header class="post-head"><strong>QuizTeam</strong> <span class="dot">·</span> <span class="muted">Dec 12, 2023</span></header><p class="post-text">Weekly quiz challenge: solve 5 logic puzzles to win points.</p><div class="meta">#quiz</div></div></article>
+        <br>
+
+        <article class="post bordered"><div class="post-left"><div class="avatar">V2</div></div><div class="post-body"><header class="post-head"><strong>VolunteerGroup</strong> <span class="dot">·</span> <span class="muted">Nov 30, 2023</span></header><p class="post-text">Community cleanup drive this Sunday — volunteers needed.</p><div class="meta">#volunteer</div></div></article>
+        <br>
+
+        <!-- Generated filler posts end -->
+
+      </section>
+
+      <section id="about" class="about">
+        <h2>About this project</h2>
+        <p class="muted">You told me you're a 1st year college student. This page is intentionally long, contains borders and subtle background colors for cards, and uses separate HTML and CSS files for clarity. All news examples marked as <strong>[Fictional]</strong> are made-up for demonstration and must not be presented as real.</p>
+      </section>
+
+    </main>
+
+    <aside class="right sidebar-right" aria-label="side content">
+      <div class="card" id="trends">
+        <h3>Trending (sample)</h3>
+        <p class="muted">#dev • #design • #campus • #study</p>
+        <ol>
+          <li>Micro-interactions</li>
+          <li>Campus carnival (fictional)</li>
+          <li>Open-source student tools</li>
+        </ol>
+      </div>
+
+      <div class="card">
+        <h3>Who to follow</h3>
+        <ul>
+          <li>Samir — @samir_dev</li>
+          <li>Lisa — @lisa_creates</li>
+        </ul>
+      </div>
+
+      <div class="card" id="resources">
+        <h3>Resources</h3>
+        <ul class="muted">
+          <li>HTML & CSS basics</li>
+          <li>Project submission checklist</li>
+          <li>Accessibility tips</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer>© 2025 Buzzly • Static demo for a college project — all sample posts are fictional and clearly labeled.</footer>
+</body>
+</html>

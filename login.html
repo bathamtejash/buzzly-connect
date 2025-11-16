@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Buzzly — Log in</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <div class="login-container">
+    <div class="card-wrap">
+      <!-- Back link to home -->
+      <a class="back-btn" href="home.html">← Back to Home</a>
+
+      <div class="card" role="form" aria-labelledby="login-heading">
+        <div class="logo" aria-hidden="true">B</div>
+
+        <h1 id="login-heading">Welcome back</h1>
+        <div class="muted">Log in to continue to Buzzly</div>
+
+        <form action="#" method="post" novalidate>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Enter your password" required>
+
+          <button type="submit" class="btn">Log in</button>
+        </form>
+
+        <div class="signup-link">
+          Don't have an account? <a href="signup.html">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
