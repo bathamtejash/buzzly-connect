@@ -203,4 +203,61 @@ footer {
 ol, ul { padding-left: 18px; }
 textarea[readonly] { opacity: 0.9; }
 
+
+
+/* ---------------- Hover Effects ---------------- */
+
+.menu a:hover,
+.nav-link:hover {
+  background: rgba(255,255,255,0.05);
+  transform: translateX(4px);
+  transition: 0.25s ease;
+}
+
+.login:hover {
+  background: #ff8080;
+  box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+  transform: translateY(-2px);
+  transition: 0.25s ease;
+}
+
+.post:hover {
+  background: #0c161f;
+  transform: translateY(-3px);
+  border-color: rgba(255,255,255,0.12);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  background: #0f1620;
+  border-color: rgba(255,255,255,0.18);
+  transform: translateY(-4px);
+  transition: 0.25s ease;
+}
+
+.hero:hover,
+.compose:hover {
+  background: #0d141d;
+  transition: 0.25s ease;
+}
+
+.logo:hover {
+  transform: rotate(3deg) scale(1.05);
+  transition: 0.25s ease;
+}
+
+a:hover {
+  color: var(--accent);
+  transition: 0.25s ease;
+}
+
+.compose textarea:focus {
+  border-color: rgba(255,255,255,0.12);
+  box-shadow: 0 0 6px rgba(255,255,255,0.15);
+  transition: 0.25s ease;
+}
+
+/* ---------------- End Hover Effects ---------------- */
+
+
 /* Keep stylesheet short and easy to read for project submission */
