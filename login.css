@@ -1,10 +1,12 @@
-/* login.css — Clean centered login card (dark theme) */
+
 
 :root{
   --bg: #000;
   --card: #0c1118;
   --accent: #ff6b6b;
-  --accent-hover: #ff7f7f;   /* lighter accent for hover */
+  --accent-hover: #ff7f7f;
+
+  
   --text: #e6eef8;
   --muted: #9aa7b8;
   --border: rgba(255,255,255,0.08);
