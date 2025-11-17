@@ -4,6 +4,7 @@
   --bg: #000;
   --card: #0c1118;
   --accent: #ff6b6b;
+  --accent-hover: #ff7f7f;   /* lighter accent for hover */
   --text: #e6eef8;
   --muted: #9aa7b8;
   --border: rgba(255,255,255,0.08);
@@ -18,8 +19,6 @@ html,body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--font);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 /* container centers the card on the page */
@@ -31,37 +30,38 @@ html,body {
   padding: 20px;
 }
 
-/* small wrapper to allow back button spacing */
+/* wrapper */
 .card-wrap {
   width: 100%;
   max-width: 460px;
   padding: 8px;
 }
 
-/* back link */
+/* back button */
 .back-btn {
   display: inline-block;
   color: var(--muted);
   text-decoration: none;
   margin-bottom: 12px;
   font-size: 14px;
+  transition: color .2s ease, transform .2s ease;
 }
-.back-btn:hover { text-decoration: underline; }
+.back-btn:hover { 
+  color: var(--accent); 
+  transform: translateX(-3px);
+}
 
-/* the card */
+/* card */
 .card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 32px 24px;
   box-shadow: 0 12px 30px rgba(2,6,23,0.6);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 
-/* logo circle */
+/* logo */
 .logo {
   width: 70px;
   height: 70px;
@@ -93,11 +93,14 @@ form {
   flex-direction: column;
   gap: 12px;
 }
+
 label {
   display: block;
   text-align: left;
   font-size: 14px;
 }
+
+/* input hover added */
 input {
   width: 100%;
   padding: 12px;
@@ -106,15 +109,23 @@ input {
   border-radius: 8px;
   border: 1px solid rgba(255,255,255,0.1);
   font-size: 15px;
+  transition: border-color .25s ease, background .25s ease;
 }
+
+input:hover {
+  background: #0b0b0b;
+  border-color: rgba(255,255,255,0.2);
+}
+
 input::placeholder { color: var(--muted); }
+
 input:focus {
   outline: none;
   border-color: var(--accent);
   box-shadow: 0 0 0 4px rgba(255,107,107,0.06);
 }
 
-/* button */
+/* button hover added */
 .btn {
   width: 100%;
   padding: 12px;
@@ -125,9 +136,15 @@ input:focus {
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
+  transition: background .25s ease, transform .2s ease;
 }
 
-/* signup link */
+.btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+/* signup hover */
 .signup-link {
   margin-top: 12px;
   color: var(--muted);
@@ -136,6 +153,10 @@ input:focus {
 .signup-link a {
   color: var(--muted);
   text-decoration: underline;
+  transition: color .2s ease;
+}
+.signup-link a:hover {
+  color: var(--accent);
 }
 
 /* responsive */

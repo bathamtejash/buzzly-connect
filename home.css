@@ -1,11 +1,12 @@
-/* styles.css — simplified for a college project */
-/* Black page background, simple borders, easy-to-read rules */
+
 
 :root{
-  --bg: #000;             /* page background */
-  --card: #0b0f14;        /* card background */
-  --muted: #9aa7b8;       /* secondary text */
-  --accent: #ff6b6b;      /* accent / buttons */
+  --bg: #000;             
+  --card: #0b0f14;        
+  --muted: #9aa7b8;       
+  --accent: #ff6b6b;      
+
+  
   --border: rgba(255,255,255,0.06);
   --max-width: 1200px;
   --gap: 20px;
@@ -197,7 +198,7 @@ footer {
   text-align: center;
 }
 
-/* Small utilities */
+
 .small { font-size: 13px; }
 .muted { color: var(--muted); }
 ol, ul { padding-left: 18px; }
@@ -205,7 +206,6 @@ textarea[readonly] { opacity: 0.9; }
 
 
 
-/* ---------------- Hover Effects ---------------- */
 
 .menu a:hover,
 .nav-link:hover {
@@ -257,7 +257,6 @@ a:hover {
   transition: 0.25s ease;
 }
 
-/* ---------------- End Hover Effects ---------------- */
 
 
-/* Keep stylesheet short and easy to read for project submission */
+
