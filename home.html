@@ -9,7 +9,7 @@
 
 <body>
 
-  <!-- ================= HEADER ================= -->
+ 
   <header class="top" role="banner">
     <div class="brand">
       <div class="logo">B</div>
@@ -24,14 +24,23 @@
       <a class="nav-link" href="#about">About</a>
       <a class="nav-link" href="#trends">Trends</a>
       <a class="nav-link" href="#resources">Resources</a>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <ul id="suggestions"></ul>
+      </div>
+
+
+
+
       <button class="login">Log in</button>
     </nav>
   </header>
 
-  <!-- ================= LAYOUT ================= -->
+ 
   <div class="layout">
 
-    <!-- LEFT SIDEBAR -->
+    
     <aside class="left" aria-label="primary navigation">
       <div class="profile">
         <div class="avatar">Y</div>
@@ -59,13 +68,13 @@
       </div>
     </aside>
 
-    <!-- MAIN CONTENT -->
+    
     <main class="main" id="home" role="main">
 
-      <!-- Hero -->
+   
       
 
-      <!-- Compose Box -->
+      
       <section class="compose">
         <h2>Compose (preview)</h2>
         <textarea readonly placeholder="Static preview area — interactive posting disabled for the Project">
@@ -75,11 +84,11 @@
         </p>
       </section>
 
-      <!-- ================= FEED ================= -->
+      
       <section class="feed" aria-label="feed">
         <h2>Feed — sample posts</h2>
 
-        <!-- POST 1 -->
+        
         <article class="post">
           <div class="post-left">
             <div class="avatar">R</div>
@@ -96,11 +105,10 @@
               Built a mini UI component library for our class project — open to collaborators. Check my repo!
             </p>
 
-            <div class="meta">#dev • 120 likes • 21 comments</div>
-          </div>
+            
         </article>
 
-        <!-- FICTIONAL POST -->
+       
         <article class="post bordered">
           <div class="post-left">
             <div class="avatar">N</div>
@@ -122,7 +130,7 @@
           </div>
         </article>
 
-        <!-- POST 3 -->
+        
         <article class="post">
           <div class="post-left">
             <div class="avatar">D</div>
@@ -143,7 +151,7 @@
           </div>
         </article>
 
-        <!-- LONG FICTIONAL POST -->
+        
         <article class="post">
           <div class="post-left">
             <div class="avatar">C</div>
@@ -169,7 +177,7 @@
         
       </section>
 
-      <!-- ABOUT SECTION -->
+      
       <section id="about" class="about">
         <h2>About this project</h2>
         <p class="muted">
@@ -181,7 +189,7 @@
 
     </main>
 
-    <!-- RIGHT SIDEBAR -->
+    
     <aside class="right sidebar-right" aria-label="side content">
       <div class="card" id="trends">
         <h3>Trending (sample)</h3>
@@ -213,7 +221,7 @@
 
   </div>
 
-
+<script src="./home.js"></script>
 
 </body>
 </html>

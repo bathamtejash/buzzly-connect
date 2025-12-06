@@ -23,7 +23,7 @@ html,body {
   font-family: var(--font);
 }
 
-/* container centers the card on the page */
+
 .login-container {
   min-height: 100vh;
   display: flex;
@@ -32,14 +32,14 @@ html,body {
   padding: 20px;
 }
 
-/* wrapper */
+
 .card-wrap {
   width: 100%;
   max-width: 460px;
   padding: 8px;
 }
 
-/* back button */
+
 .back-btn {
   display: inline-block;
   color: var(--muted);
@@ -53,7 +53,7 @@ html,body {
   transform: translateX(-3px);
 }
 
-/* card */
+
 .card {
   background: var(--card);
   border: 1px solid var(--border);
@@ -63,7 +63,7 @@ html,body {
   text-align: center;
 }
 
-/* logo */
+
 .logo {
   width: 70px;
   height: 70px;
@@ -77,7 +77,7 @@ html,body {
   font-size: 28px;
 }
 
-/* headings */
+
 h1 {
   margin: 14px 0 6px;
   font-size: 22px;
@@ -88,7 +88,7 @@ h1 {
   margin-bottom: 14px;
 }
 
-/* form */
+
 form {
   width: 100%;
   display: flex;
@@ -96,13 +96,36 @@ form {
   gap: 12px;
 }
 
+.suggestion-box {
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #ccc;
+  background: white;
+  width: 100%;
+  display: none;
+  border-radius: 6px;
+  max-height: 140px;
+  overflow-y: auto;
+}
+
+.suggestion-box li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.suggestion-box li:hover {
+  background: #f0f0f0;
+}
+
+
 label {
   display: block;
   text-align: left;
   font-size: 14px;
 }
 
-/* input hover added */
+
 input {
   width: 100%;
   padding: 12px;
@@ -127,7 +150,7 @@ input:focus {
   box-shadow: 0 0 0 4px rgba(255,107,107,0.06);
 }
 
-/* button hover added */
+
 .btn {
   width: 100%;
   padding: 12px;
@@ -146,7 +169,7 @@ input:focus {
   transform: translateY(-2px);
 }
 
-/* signup hover */
+
 .signup-link {
   margin-top: 12px;
   color: var(--muted);
@@ -161,7 +184,7 @@ input:focus {
   color: var(--accent);
 }
 
-/* responsive */
+
 @media (max-width: 480px) {
   .card { padding: 22px; }
   h1 { font-size: 20px; }

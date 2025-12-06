@@ -26,7 +26,7 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Top header */
+
 .top {
   max-width: var(--max-width);
   margin: 16px auto;
@@ -35,7 +35,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
   border-radius: var(--radius);
-  background: #06080a;              /* subtle card color */
+  background: #06080a;              
   border: 1px solid var(--border);
 }
 
@@ -60,7 +60,7 @@ html, body {
 .site-info .title { font-weight: 700; }
 .site-info .subtitle { font-size: 13px; color: var(--muted); }
 
-/* Nav actions */
+
 .nav-actions { display: flex; gap: 10px; align-items: center; }
 .nav-link {
   color: #e6eef8;
@@ -69,6 +69,27 @@ html, body {
   text-decoration: none;
   border: 1px solid transparent;
 }
+
+
+.search-box {
+  position: relative;
+  margin-left: 20px;
+}
+
+#searchInput {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 160px;
+}
+
+#searchInput:focus {
+  outline: none;
+  border-color: #999;
+}
+
+
+
 .nav-link:hover { border-color: var(--border); }
 .login {
   background: var(--accent);
@@ -79,7 +100,7 @@ html, body {
   font-weight: 700;
 }
 
-/* Page grid */
+
 .layout {
   max-width: var(--max-width);
   margin: 18px auto;
@@ -98,7 +119,7 @@ html, body {
   .layout { grid-template-columns: 1fr; padding: 0 12px; }
 }
 
-/* Left column (sidebar) */
+
 .left {
   background: var(--card);
   border: 1px solid var(--border);
@@ -123,7 +144,7 @@ html, body {
 .menu { display: flex; flex-direction: column; margin-top: 12px; gap: 8px; }
 .menu a { color: #e6eef8; padding: 8px; border-radius: 8px; text-decoration: none; }
 
-/* Main column */
+
 .main { display: flex; flex-direction: column; gap: 16px; }
 
 .hero {
@@ -150,7 +171,7 @@ html, body {
   resize: none;
 }
 
-/* Feed & posts */
+
 .feed h2 { margin: 0 0 8px 0; }
 
 .post {
@@ -172,7 +193,7 @@ html, body {
 .post-text { margin: 8px 0; line-height: 1.4; }
 .meta { font-size: 13px; color: var(--muted); }
 
-/* Right column */
+
 .sidebar-right {
   display: flex;
   flex-direction: column;
@@ -188,7 +209,7 @@ html, body {
 
 .card h3 { margin: 0 0 8px 0; }
 
-/* Footer */
+
 footer {
   max-width: var(--max-width);
   margin: 18px auto;
